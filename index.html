@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Эстетичный калькулятор | Премиум</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+  <div class="calculator-wrapper">
+    <!-- Выбор темы -->
+    <div class="theme-selector">
+      <div class="theme-dot active" data-theme="default" title="Светлая классика"></div>
+      <div class="theme-dot" data-theme="dark" title="Глубокий космос"></div>
+      <div class="theme-dot" data-theme="rose" title="Розовый рассвет"></div>
+    </div>
+
+    <!-- Калькулятор -->
+    <div class="calculator">
+      <div class="display">
+        <div class="previous-operand" id="previous-operand"></div>
+        <div class="current-operand" id="current-operand">0</div>
+      </div>
+
+      <div class="buttons-grid">
+        <!-- Первый ряд -->
+        <button class="special" data-action="clear" id="clear-btn">AC</button>
+        <button class="special" data-action="sign">±</button>
+        <button class="special" data-action="percent">%</button>
+        <button class="operator" data-action="operation" data-value="÷">÷</button>
+
+        <!-- Второй ряд -->
+        <button data-action="number" data-value="7">7</button>
+        <button data-action="number" data-value="8">8</button>
+        <button data-action="number" data-value="9">9</button>
+        <button class="operator" data-action="operation" data-value="×">×</button>
+
+        <!-- Третий ряд -->
+        <button data-action="number" data-value="4">4</button>
+        <button data-action="number" data-value="5">5</button>
+        <button data-action="number" data-value="6">6</button>
+        <button class="operator" data-action="operation" data-value="−">−</button>
+
+        <!-- Четвёртый ряд -->
+        <button data-action="number" data-value="1">1</button>
+        <button data-action="number" data-value="2">2</button>
+        <button data-action="number" data-value="3">3</button>
+        <button class="operator" data-action="operation" data-value="+">+</button>
+
+        <!-- Пятый ряд -->
+        <button class="zero" data-action="number" data-value="0">0</button>
+        <button data-action="decimal">,</button>
+        <button class="operator" data-action="equals">=</button>
+      </div>
+    </div>
+    <div class="footer-note">дизайн · минимализм · точность</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
